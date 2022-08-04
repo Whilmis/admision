@@ -1,0 +1,41 @@
+{
+  "registros": [
+    {
+      "nombreEstudiante": "Miguel",
+      "apellidoEstudiante":"Rosario Cuevas",
+      "actaNacimiento":"001-054564-7",
+      "direccion":"Santo Domingo norte, sector La victoria  # 42",
+      "nombrePadre": "Ramon",
+      "apellidoPadre": "Perez Guzman",
+      "telefono": "849-549-3232",
+      "cedula":"402-5554890-8",
+      "confirmacion": false,
+      "pago": false,
+      "id":45984    },
+      {
+        "nombreEstudiante": "Miguel",
+        "apellidoEstudiante":"Rosario Cuevas",
+        "actaNacimiento":"001-054564-7",
+        "direccion":"Santo Domingo norte, sector La victoria  # 42",
+        "nombrePadre": "Ramon",
+        "apellidoPadre": "Perez Guzman",
+        "telefono": "849-549-3232",
+        "cedula":"402-5554890-8",
+        "confirmacion": false,
+        "pago": false,
+        "id":546564    },
+        {
+          "nombreEstudiante": "Miguel",
+          "apellidoEstudiante":"Rosario Cuevas",
+          "actaNacimiento":"001-054564-7",
+          "direccion":"Santo Domingo norte, sector La victoria  # 42",
+          "nombrePadre": "Ramon",
+          "apellidoPadre": "Perez Guzman",
+          "telefono": "849-549-3232",
+          "cedula":"402-5554890-8",
+          "confirmacion": false,
+          "pago": false,
+          "id":66779    }
+
+  ]
+}
