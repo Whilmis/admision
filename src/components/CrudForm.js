@@ -8,11 +8,11 @@ const initailForm = {
   direccion:"",
   nombrePadre: "",
   apellidoPadre: "",
-  telefono: null,
-  cedula:null,
+  telefono: "",
+  cedula:"",
   confirmacion: false,
   pago: false,
-  idregistro:""
+  id: null,
 };
 
 const CrudForm = () => {
@@ -126,7 +126,7 @@ const CrudForm = () => {
         <input
           type="text"
           name="cedula"
-          placeholder="Nombre"
+          placeholder="cedula"
           onChange={handleChange}
           value={form.cedula}
         />
@@ -135,17 +135,18 @@ const CrudForm = () => {
         <input
           type="checkbox"
           name="confirmacion"
-      
-          onChange={handleChange}
-          value={form.confirmacion}
+          id="confirmacion"
+          onChange={handleChecked}
+          checked={form.confirmacion}
         />
 
         <input
           type="checkbox"
           name="pago"
-   
+           id="pago"
           onChange={handleChecked}
-          value={form.pago}
+          checked={form.pago}
+   
         />
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpiar" onClick={handleReset} />

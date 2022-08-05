@@ -12,8 +12,17 @@ const CrudTable = () => {
         <thead>
           <tr>
             <th>Nombre</th>
-            <th>Constelación</th>
-            <th>Acciones</th>
+            <th>Apellido</th>
+            <th>Acta</th>
+            <th>direccion</th>
+            <th>Nombre p</th>
+            <th>Apellido</th>
+            <th>telefono</th>
+            <th>cedula</th>
+            <th>Confirmar</th>
+            <th>Pago</th>
+            <th>id</th>
+            <th>acciones</th>
           </tr>
         </thead>
         <tbody>
