@@ -1,17 +1,39 @@
+form{
+    display: flex;
+    justify-content:left;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 form .grupo{
     position: relative;
     margin: 45px ;
+    width: 210px;
+    display: inline-block;
 }
 
 input{
     background: none;
     color: #c6c6c6;
-    font-size: 18px;
+    font-size: 12px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 100%;
+    width: 200px;
+    padding: 5px;
     border: none;
-    border-bottom: 1px solid var(--colorTextos);
+    border-bottom: 1px solid rgb(35, 34, 34);
+    margin-top: 60px;
+}
+
+.direccion{
+width: 300px;
+margin-right: 10px;
+
+}
+.enviar,.limpiar{
+    background-color: #4568DC;
+    border-radius: 10px;
+    height: 40px;
+    margin: auto;
 }
 
 input:focus{ 
@@ -19,8 +41,22 @@ input:focus{
     color: #5e5d5d;
 }
 
+.texto{
+   text-align: center;
+    color: #0f2b88;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textos{
+    color: #2196f3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
 label{
-    color: var(--colorTextos);
+    color: #2196f3;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     position: absolute;
     left: 5px;
@@ -41,6 +77,8 @@ input:valid~label{
     display: block;
     width: 100%;
 }
+
+
 
 .barra::before{
     content: "";

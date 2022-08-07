@@ -16,7 +16,7 @@ const initailForm = {
   id: null,
 };
 
-const CrudForm = () => {
+const CrudFormC = () => {
   const { createData, updateData, dataToEdit, setDataToEdit } =
     useContext(CrudContext);
 
@@ -177,25 +177,7 @@ const CrudForm = () => {
       
        <div>
         
-       <h4 for="confirmacion" class="textos">Confirmacion</h4>
-        <input
-          type="checkbox"
-          name="confirmacion"
-          id="confirmacion"
-          onChange={handleChecked}
-          checked={form.confirmacion}
-        />
-          </div>
-      <div>
-      <h4 for="pago" class="textos">Pago</h4>
-        <input
-          type="checkbox"
-          name="pago"
-           id="pago"
-          onChange={handleChecked}
-          checked={form.pago}
-   
-        />
+    
 
 </div>
         <input type="submit" value="Enviar" className="enviar"/>
@@ -205,4 +187,4 @@ const CrudForm = () => {
   );
 };
 
-export default CrudForm;
+export default CrudFormC;

@@ -16,12 +16,12 @@ const CrudTableRow = ({ el }) => {
       <td>{telefono}</td>
       <td>{cedula}</td>
       <td>{confirmacion? "Confirmado":"En Proceso"}</td>
-      <td>{pago? "si": "no"}</td>
-      <td>{id}</td>
+      <td>{pago? "Realizado": "NO realizado"}</td>
+      
    
       <td>
-        <button onClick={() => setDataToEdit(el)}>Editar</button>
-        <button onClick={() => deleteData(id)}>Eliminar</button>
+        <button onClick={() => setDataToEdit(el)} className="editar">Editar</button>
+        <button onClick={() => deleteData(id)} className="eliminar">Eliminar</button>
       </td>
     </tr>
   );

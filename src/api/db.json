@@ -9,8 +9,8 @@
       "apellidoPadre": "Perez Guzman",
       "telefono": "849-549-3232",
       "cedula": "402-5554890-8",
-      "confirmacion": false,
-      "pago": false,
+      "confirmacion": true,
+      "pago": true,
       "id": 45984
     },
     {
@@ -128,7 +128,7 @@
       "cedula": "5454847",
       "confirmacion": true,
       "pago": true,
-      "id": 1659737306611
+      "id": 1659832840543
     },
     {
       "nombreEstudiante": "Whilmis",
@@ -140,8 +140,18 @@
       "telefono": "8095442812",
       "cedula": "5454847",
       "confirmacion": true,
-      "pago": true,
-      "id": 1659832840543
+      "pago": false,
+      "id": 1659833154734
+    }
+  ],
+  "users": [
+    {
+      "nombre": "Whilmis",
+      "apellido": "Perez",
+      "gmail": "",
+      "contrasena": "1234",
+      "admin": true,
+      "id": 2424
     }
   ]
 }

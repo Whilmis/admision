@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import CrudContext from "../context/CrudContext";
-import CrudTableRow from "./CrudTableRow";
+import UserContext from "../context/UserContex";
+import CrudTableRowU from "./CrudTableRowU";
 import"./CrudTable.css"
 
-const CrudTable = () => {
-  const { db: data } = useContext(CrudContext);
+const CrudTableU = () => {
+  const { dbU: data } = useContext(UserContext);
 
   return (
     <div>
@@ -14,21 +14,15 @@ const CrudTable = () => {
           <tr>
             <th>Nombre</th>
             <th>Apellido</th>
-            <th>Acta</th>
-            <th>direccion</th>
-            <th>Nombre p</th>
-            <th>Apellido</th>
-            <th>telefono</th>
-            <th>cedula</th>
-            <th>Confirmar</th>
-            <th>Pago</th>
-
+            <th>gmail</th>
+            <th>Contraseña</th>
+            <th>Admin</th>
             <th>acciones</th>
           </tr>
         </thead>
         <tbody>
           {data.length > 0 ? (
-            data.map((el) => <CrudTableRow key={el.id} el={el} />)
+            data.map((el) => <CrudTableRowU key={el.id} el={el} />)
           ) : (
             <tr>
               <td colSpan="3">Sin datos</td>
@@ -40,4 +34,4 @@ const CrudTable = () => {
   );
 };
 
-export default CrudTable;
+export default CrudTableU;

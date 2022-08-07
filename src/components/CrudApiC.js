@@ -1,21 +1,21 @@
 import { useContext } from "react";
 import CrudContext from "../context/CrudContext";
-import CrudForm from "./CrudForm";
+import CrudFormC from "./CrudFormC";
 import CrudTable from "./CrudTable";
 import Loader from "./Loader";
 import Message from "./Message";
-import Headers from "./Headers";
+import HeadersC from "./HeadersC";
 
 
-const CrudApi = () => {
+const CrudApiC = () => {
   const { db, loading, error } = useContext(CrudContext);
 
   return (
     <>
-    <Headers/>
+    <HeadersC/>
       
       <article className="grid-1-2">
-        <CrudForm />
+        <CrudFormC />
         {loading && <Loader />}
         {error && (
           <Message
@@ -29,4 +29,4 @@ const CrudApi = () => {
   );
 };
 
-export default CrudApi;
+export default CrudApiC;
