@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import CrudContext from "../context/CrudContext";
+import "./CrudForm.css"
 
 const initailForm = {
   nombreEstudiante: "",
@@ -70,68 +71,108 @@ const CrudForm = () => {
     <div>
       <h3>{dataToEdit ? "Editar" : "Agregar"}</h3>
       <form onSubmit={handleSubmit}>
-        <input
+
+      <div className="grupo">
+      <input
           type="text"
           name="nombreEstudiante"
-          placeholder="Nombre"
+          placeholder=""
           onChange={handleChange}
           value={form.nombreEstudiante}
-        />
+        /><span className="barra"></span>
+            <label for="">Nombre</label>
+            </div>
+  
+       
 
-       <input
+            <div className="grupo">
+            <input
           type="text"
           name="apellidoEstudiante"
-          placeholder="Apellido"
+          placeholder=""
           onChange={handleChange}
           value={form.apellidoEstudiante}
-        />
-         <input
+        /><span className="barra"></span>
+            <label for="">Apellido</label>
+            </div>
+     
+
+          <div className="grupo">
+          <input
           type="text"
           name="actaNacimiento"
-          placeholder="Acta de nacimiento"
+          placeholder=""
           onChange={handleChange}
           value={form.actaNacimiento}
-        />
-         <input
+        /><span className="barra"></span>
+            <label for="">Acta de nacimiento</label>
+            </div>
+     
+
+           <div className="grupo">
+           <input
           type="text"
           name="direccion"
-          placeholder="direccion"
+          placeholder=""
           onChange={handleChange}
           value={form.direccion}
-        />
-         <input
+        /><span className="barra"></span>
+            <label for="">direccion</label>
+            </div>
+       
+
+       <div className="grupo">
+       <input
           type="text"
           name="nombrePadre"
-          placeholder="Nombre"
+          placeholder=""
           onChange={handleChange}
           value={form.nombrePadre}
-        />
+        /><span className="barra"></span>
+            <label for="">Nombre del Padre</label>
+            </div>
+       
 
-         <input
+
+             <div className="grupo">
+             <input
           type="text"
           name="apellidoPadre"
-          placeholder="Apellido"
+          placeholder=""
           onChange={handleChange}
           value={form.apellidoPadre}
-        />
-        
-        <input
+        /><span className="barra"></span>
+            <label for="">Apellido del Padre</label>
+            </div>
+      
+
+
+             <div className="grupo">
+             <input
           type="text"
           name="telefono"
           placeholder="telefono"
           onChange={handleChange}
           value={form.telefono}
-        />
-        
-        <input
+        /><span className="barra"></span>
+            <label for="">Telefono</label>
+            </div>
+      
+
+
+             <div className="grupo">
+             <input
           type="text"
           name="cedula"
-          placeholder="cedula"
+          placeholder=""
           onChange={handleChange}
           value={form.cedula}
         />
-        
-        
+        <span className="barra"></span>
+            <label for="">Cedula</label>
+            </div>
+      
+       
         <input
           type="checkbox"
           name="confirmacion"
@@ -139,6 +180,7 @@ const CrudForm = () => {
           onChange={handleChecked}
           checked={form.confirmacion}
         />
+          
 
         <input
           type="checkbox"

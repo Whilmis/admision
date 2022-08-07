@@ -4,12 +4,15 @@ import CrudForm from "./CrudForm";
 import CrudTable from "./CrudTable";
 import Loader from "./Loader";
 import Message from "./Message";
+import Headers from "./Headers";
+
 
 const CrudApi = () => {
   const { db, loading, error } = useContext(CrudContext);
 
   return (
-    <div>
+    <>
+    <Headers/>
       <h2>CRUD API con Context API</h2>
       <article className="grid-1-2">
         <CrudForm />
@@ -22,7 +25,7 @@ const CrudApi = () => {
         )}
         {db && <CrudTable />}
       </article>
-    </div>
+    </>
   );
 };
 
