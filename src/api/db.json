@@ -148,10 +148,18 @@
     {
       "nombre": "Whilmis",
       "apellido": "Perez",
-      "gmail": "",
+      "gmail": "Whilmis21@gmail.com",
       "contrasena": "1234",
       "admin": true,
       "id": 2424
+    },
+    {
+      "nombre": "Richard",
+      "apellido": "Hernandez",
+      "gmail": "Richard@gmail.com",
+      "contrasena": "5555",
+      "admin": true,
+      "id": 1659894580590
     }
   ]
 }

@@ -1,0 +1,17 @@
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.elemento{
+    width: 20%;
+    padding: 30px;
+}
+.img{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+}

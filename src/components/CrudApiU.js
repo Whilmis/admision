@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import UserContext from "../context/UserContext";
+import UserContext from "../context/UserContext"
 import CrudFormU from "./CrudFormU";
 import Loader from "./Loader";
 import Message from "./Message";
@@ -7,7 +7,7 @@ import Headers from "./Headers";
 import CrudTableU from "./CrudTableU";
 
 
-const CrudApiC = () => {
+const CrudApiU = () => {
   const { dbU, loadingU, errorU } = useContext(UserContext);
 
   return (
@@ -29,4 +29,4 @@ const CrudApiC = () => {
   );
 };
 
-export default CrudApiC;
+export default CrudApiU;

@@ -43,7 +43,7 @@ const CrudFormU = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!form.nombreEstudiante || !form.apellidoEstudiante) {
+    if (!form.nombre || !form.apellido) {
       alert("Datos incompletos");
       return;
     }
@@ -95,7 +95,7 @@ const CrudFormU = () => {
             
           <div className="grupo">
           <input
-          type="text"
+          type="email"
           name="gmail"
           placeholder=""
           onChange={handleChange}
@@ -107,7 +107,7 @@ const CrudFormU = () => {
 
            <div className="grupo direccion">
            <input
-          type="text"
+          type="password"
           name="contrasena"
           placeholder=""
           onChange={handleChange}

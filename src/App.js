@@ -1,22 +1,16 @@
 
 
 /*import CrudApi from "./components/CrudApi";*/
-import Inicio from "./components/Inicio";
+import CrudApiU from "./components/CrudApiU";
 /*import { CrudProvider } from "./context/CrudContext";*/
-/*import {UserProvider} from "./context/UserContex"*/
+import {UserProvider} from "./context/UserContext"
 
 function App() {
   return (
-  
-/*
-       <CrudProvider>
-     
-        <CrudApi/>
-      
-      </CrudProvider>
-  */
-
-      <Inicio/>
+  <UserProvider>
+  <CrudApiU/>
+  </UserProvider>
+ 
   );
 }
 
