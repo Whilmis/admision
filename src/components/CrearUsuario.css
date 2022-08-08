@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-/*
+
 
 :root {
     --colorTextos: #49454567;
@@ -14,13 +14,8 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto';
-    background: #5f6782;
 
-}
-
-h1{
+.creah1{
     text-align: center;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
@@ -43,7 +38,6 @@ form{
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     width: 40%;
-    min-width: 300px;
     margin: 0 auto;
   
  
@@ -115,11 +109,11 @@ button{
     font-family: 'roboto';
     background: #4568DC;
     /* fallback for old browsers */
- /*   background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
     /* Chrome 10-25, Safari 5.1-6 */
- /*   background: linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #B06AB3, #4568DC);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /*  border: none;
+    border: none;
     display: block;
     width: 80%;
     margin: 10px auto;
@@ -134,4 +128,4 @@ button{
         width: 80%;
     }
 }
-*/
+

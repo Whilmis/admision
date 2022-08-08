@@ -1,14 +1,14 @@
-import Headers from "./Headers"
+import HeadersC from "./HeadersC"
 import Inicio from "./Inicio";
 
 
 
-const administrador = () =>{
+const Cliente = () =>{
     return(
         <>
 
 
-<Headers/>
+<HeadersC/>
    
  <Inicio/>      
         
@@ -17,4 +17,4 @@ const administrador = () =>{
 
 }
 
-export default administrador;
+export default Cliente;

@@ -47,11 +47,12 @@ const Login = () =>
        <label for="">Nombre</label>
    </div>*/
     return(
+        <div className="loginbody">
         <form onSubmit={handleSubmit}  id="form">
         <div class="form">
-            <h1>COMPASS POINT</h1>
-            <h4>Sistema de admision</h4>
-            <h5>Inicio de sesion</h5>
+            <h1  id="loginh1">COMPASS POINT</h1>
+            <h4 className="loginh4">Sistema de admision</h4>
+            <h5 className="loginh5">Inicio de sesion</h5>
             <div class="grupo">
                 <input type="email" name="" id="gmail" onChange={handleChange} value={form.gmail} required /><span className="barra"></span>
                 <label for="">Email</label>
@@ -64,6 +65,7 @@ const Login = () =>
             <button type="submit">Acceder</button>
         </div>
     </form>
+    </div>
     );
 }
 

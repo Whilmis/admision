@@ -1,16 +1,20 @@
 
 
-/*import CrudApi from "./components/CrudApi";*/
-/*import CrudApiU from "./components/CrudApiU";*/
+import CrudApi from "./components/CrudApi";
+import CrudApiU from "./components/CrudApiU";
+import CrudApiC from "./components/CrudApiC"
+import Contactos from "./components/Contactos"
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
+import { CrudProvider } from "./context/CrudContext";
 import { UserProvider } from "./context/UserContext";
 import CrearUsuario from "./components/CrearUsuario"
 import Login from "./components/Login";
 import Administrador from "./components/Administrador";
+import Cliente from "./components/Cliente";
 
 
 
@@ -40,9 +44,37 @@ function App() {
       }/>
 
 <Route path="cliente" element={
+         
+         <Cliente/>
+        
+      }/>
+
+<Route path="administrar" element={
+         <CrudProvider>
+         <CrudApi/>
+         </CrudProvider>
+        
+      }/>
+
+<Route path="solicitud" element={
+         <CrudProvider>
+         <CrudApiC/>
+         </CrudProvider>
+        
+      }/>
+
+
+<Route path="usuarios" element={
          <UserProvider>
-         <CrearUsuario/>
+         <CrudApiU/>
          </UserProvider>
+        
+      }/>
+<Route path="contacto" element={
+      
+         <Contactos/>
+      
+        
       }/>
    
     </Routes>

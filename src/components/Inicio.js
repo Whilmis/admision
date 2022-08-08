@@ -4,7 +4,7 @@ import "./Inicio.css"
 
 const Inicio = () =>{
     return(
-        <div>
+        <div className="body">
             
           <div className="imagen"><p>La educación es nuestra primera <span> amiga </span>  </p></div>
 

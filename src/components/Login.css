@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-body {
+.loginbody {
     font-family: 'Roboto';
     background-image: url("pexels-mikhail-nilov-8923079.jpg");
     background-color: #cccccc; /* Used if the image is unavailable */
@@ -31,15 +31,17 @@ body {
 
 
 
-h1{
+#loginh1{
     text-align: center;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
+    color: #1d0c0c;
+   
 }
 h4{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-     color: #5e5d5d;
+     color: #1d0c0c;
 }
 
 h5
@@ -50,7 +52,7 @@ h5
 
 }
 
-form{
+#form{
     background: #fff;
     padding: 70px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);

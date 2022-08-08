@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../context/UserContext";
+import { Link } from "react-router-dom";
 import "./CrearUsuario.css";
 
 const initailForm = {
@@ -62,9 +63,10 @@ const CrearUsuario = () =>
   };
 
     return(
+        <div className="loginbody">
         <form onSubmit={handleSubmit}  id="form">
         <div class="form">
-            <h1>COMPASS POINT</h1>
+            <h1 className="creah1">COMPASS POINT</h1>
             <h4>Sistema de admision</h4>
             <h5>Crear usueario</h5>
             <div className="grupo">
@@ -93,6 +95,7 @@ const CrearUsuario = () =>
             <button type="submit">Crear</button>
         </div>
     </form>
+    </div>
     );
 }
 

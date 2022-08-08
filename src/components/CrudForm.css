@@ -1,6 +1,6 @@
-form{
+#formulario{
     display: flex;
-    justify-content:left;
+    justify-content:space-evenly;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -11,18 +11,7 @@ form .grupo{
     display: inline-block;
 }
 
-input{
-    background: none;
-    color: #c6c6c6;
-    font-size: 12px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 200px;
-    padding: 5px;
-    border: none;
-    border-bottom: 1px solid rgb(35, 34, 34);
-    margin-top: 60px;
-}
+
 
 .direccion{
 width: 300px;

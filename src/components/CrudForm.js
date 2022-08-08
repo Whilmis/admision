@@ -70,7 +70,7 @@ const CrudForm = () => {
   return (
     <div>
       <h3 className="texto">{dataToEdit ? "Editar" : "Agregar"}</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id="formulario">
 
       <div className="grupo">
       <input
@@ -79,6 +79,7 @@ const CrudForm = () => {
           placeholder=""
           onChange={handleChange}
           value={form.nombreEstudiante}
+          className="input"
         /><label for="name" class="form_label">Nombre del estudiante</label>
         <span class="form__line"></span>
             </div>
@@ -92,6 +93,7 @@ const CrudForm = () => {
           placeholder=""
           onChange={handleChange}
           value={form.apellidoEstudiante}
+          id="input"
         />  <span className="barra"></span><label for="name" class="form_label">Apellido del etudiante</label>
         <span class="form__line"></span>
             </div>
