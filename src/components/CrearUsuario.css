@@ -33,22 +33,11 @@ h5
 
 }
 
-form{
-    background: #fff;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    width: 40%;
-    margin: 0 auto;
-  
- 
-}
 
 
 
-form .grupo{
-    position: relative;
-    margin: 45px ;
-}
+
+
 
 input{
     background: none;

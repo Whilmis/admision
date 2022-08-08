@@ -5,7 +5,7 @@ const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
   const [dbU, setDbU] = useState(null);
-  const [actuaU, setActualU] = useState(null);
+  const [actualU, setActualU] = useState(5);
   const [dataToEditU, setDataToEditU] = useState(null);
   const [errorU, setErrorU] = useState(null);
   const [loadingU, setLoadingU] = useState(false);
@@ -29,6 +29,12 @@ const UserProvider = ({ children }) => {
         setLoadingU(false);
       });
   }, [url]);
+
+
+ const actualisaActual = (data) =>
+ {
+  setActualU(data);
+ }
 
   const createDataU = (data) => {
     data.id = Date.now();
@@ -103,7 +109,9 @@ const UserProvider = ({ children }) => {
     setDataToEditU,
     updateDataU,
     deleteDataU,
-    setActualU
+    setActualU,
+    actualU,
+    actualisaActual
   };
 
   return <UserContext.Provider value={data}>{children}</UserContext.Provider>;

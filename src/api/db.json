@@ -1,43 +1,59 @@
 {
   "registros": [
     {
-      "nombreEstudiante": "Miguel",
-      "apellidoEstudiante": "Rosario Cuevas",
-      "actaNacimiento": "001-054564-7",
-      "direccion": "Santo Domingo norte, sector La victoria  # 42",
-      "nombrePadre": "Ramon",
-      "apellidoPadre": "Perez Guzman",
-      "telefono": "849-549-3232",
+      "nombreEstudiante": "Whilmis",
+      "apellidoEstudiante": "Perez De Peña",
+      "actaNacimiento": "40000",
+      "direccion": "La victoria calle Altagracia #42",
+      "nombrePadre": "Whilmis",
+      "apellidoPadre": "Perez De Peña",
+      "telefono": "8095442812",
+      "cedula": "5454847",
+      "confirmacion": false,
+      "pago": false,
+      "id": 1659964313817
+    },
+    {
+      "nombreEstudiante": "Whilmis",
+      "apellidoEstudiante": "Perez De Peña",
+      "actaNacimiento": "",
+      "direccion": "La victoria calle Altagracia #42",
+      "nombrePadre": "Whilmis",
+      "apellidoPadre": "Perez De Peña",
+      "telefono": "8095442812",
+      "cedula": "5454847",
+      "confirmacion": false,
+      "pago": false,
+      "idUsuario": null,
+      "id": 1659964730766
+    },
+    {
+      "nombreEstudiante": "Whilmis",
+      "apellidoEstudiante": "Perez De Peña",
+      "actaNacimiento": "40000",
+      "direccion": "La victoria calle Altagracia #42",
+      "nombrePadre": "Whilmis",
+      "apellidoPadre": "Perez De Peña",
+      "telefono": "8095442812",
+      "cedula": "5454847",
+      "confirmacion": false,
+      "pago": false,
+      "idUsuario": null,
+      "id": 1659964852604
+    },
+    {
+      "nombreEstudiante": "Whilmis",
+      "apellidoEstudiante": "Perez De Peña",
+      "actaNacimiento": "",
+      "direccion": "La victoria calle Altagracia #42",
+      "nombrePadre": "Whilmis",
+      "apellidoPadre": "Perez De Peña",
+      "telefono": "8095442812",
       "cedula": "402-5554890-8",
-      "confirmacion": true,
-      "pago": true,
-      "id": 45984
-    },
-    {
-      "nombreEstudiante": "Miguel",
-      "apellidoEstudiante": "Rosario Cuevas",
-      "actaNacimiento": "001-054564-7",
-      "direccion": "Santo Domingo norte, sector La victoria  # 42",
-      "nombrePadre": "Ramon",
-      "apellidoPadre": "Perez romero",
-      "telefono": "849-549-3232",
-      "cedula": "402-5554890-8",
       "confirmacion": false,
       "pago": false,
-      "id": 546564
-    },
-    {
-      "nombreEstudiante": "Whilmis",
-      "apellidoEstudiante": "Perez De Peña",
-      "actaNacimiento": "40000",
-      "direccion": "La victoria calle Altagracia #42",
-      "nombrePadre": "Whilmis",
-      "apellidoPadre": "Perez De Peña",
-      "telefono": "8095442812",
-      "cedula": "5454847",
-      "confirmacion": true,
-      "pago": true,
-      "id": 1659735356926
+      "idUsuario": null,
+      "id": 1659965904744
     },
     {
       "nombreEstudiante": "Whilmis",
@@ -50,20 +66,8 @@
       "cedula": "5454847",
       "confirmacion": false,
       "pago": false,
-      "id": 1659735788924
-    },
-    {
-      "nombreEstudiante": "Whilmis",
-      "apellidoEstudiante": "Perez De Peña",
-      "actaNacimiento": "40000",
-      "direccion": "La victoria calle Altagracia #42",
-      "nombrePadre": "Whilmis",
-      "apellidoPadre": "Perez De Peña",
-      "telefono": "8095442812",
-      "cedula": "5454847",
-      "confirmacion": false,
-      "pago": true,
-      "id": 1659736836602
+      "idUsuario": null,
+      "id": 1659966106332
     },
     {
       "nombreEstudiante": "Whilmis",
@@ -76,72 +80,8 @@
       "cedula": "5454847",
       "confirmacion": false,
       "pago": false,
-      "id": 1659737181434
-    },
-    {
-      "nombreEstudiante": "Whilmis",
-      "apellidoEstudiante": "Perez De Peña",
-      "actaNacimiento": "40000",
-      "direccion": "La victoria calle Altagracia #42",
-      "nombrePadre": "Whilmis",
-      "apellidoPadre": "Perez De Peña",
-      "telefono": "8095442812",
-      "cedula": "5454847",
-      "confirmacion": false,
-      "pago": false,
-      "id": 1659737199905
-    },
-    {
-      "nombreEstudiante": "Whilmis",
-      "apellidoEstudiante": "Perez De Peña",
-      "actaNacimiento": "40000",
-      "direccion": "La victoria calle Altagracia #42",
-      "nombrePadre": "Whilmis",
-      "apellidoPadre": "Perez De Peña",
-      "telefono": "8095442812",
-      "cedula": "5454847",
-      "confirmacion": true,
-      "pago": true,
-      "id": 1659737243570
-    },
-    {
-      "nombreEstudiante": "Whilmis",
-      "apellidoEstudiante": "Perez De Peña",
-      "actaNacimiento": "40000",
-      "direccion": "La victoria calle Altagracia #42",
-      "nombrePadre": "Whilmis",
-      "apellidoPadre": "Perez De Peña",
-      "telefono": "8095442812",
-      "cedula": "5454847",
-      "confirmacion": true,
-      "pago": true,
-      "id": 1659737264807
-    },
-    {
-      "nombreEstudiante": "Whilmis",
-      "apellidoEstudiante": "Perez De Peña",
-      "actaNacimiento": "40000",
-      "direccion": "La victoria calle Altagracia #42",
-      "nombrePadre": "Whilmis",
-      "apellidoPadre": "Perez De Peña",
-      "telefono": "8095442812",
-      "cedula": "5454847",
-      "confirmacion": true,
-      "pago": true,
-      "id": 1659832840543
-    },
-    {
-      "nombreEstudiante": "Whilmis",
-      "apellidoEstudiante": "Perez De Peña",
-      "actaNacimiento": "40000",
-      "direccion": "La victoria calle Altagracia #42",
-      "nombrePadre": "Whilmis",
-      "apellidoPadre": "Perez De Peña",
-      "telefono": "8095442812",
-      "cedula": "5454847",
-      "confirmacion": true,
-      "pago": false,
-      "id": 1659833154734
+      "idUsuario": 5,
+      "id": 1659967447790
     }
   ],
   "users": [
@@ -177,6 +117,14 @@
       "admin": false,
       "id": 1659916323414,
       "password": ""
+    },
+    {
+      "nombre": "Andre",
+      "apellido": "Perez",
+      "gmail": "perez@gmai.com",
+      "contrasena": "5555",
+      "admin": false,
+      "id": 1659967577988
     }
   ]
 }

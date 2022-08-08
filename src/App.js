@@ -57,9 +57,11 @@ function App() {
       }/>
 
 <Route path="solicitud" element={
+         <UserProvider>
          <CrudProvider>
          <CrudApiC/>
          </CrudProvider>
+         </UserProvider>
         
       }/>
 

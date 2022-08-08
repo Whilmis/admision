@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import CrudContext from "../context/CrudContext";
 import CrudFormC from "./CrudFormC";
-import CrudTable from "./CrudTable";
+import CrudTableC from "./CrudTableC";
 import Loader from "./Loader";
 import Message from "./Message";
 import HeadersC from "./HeadersC";
@@ -23,7 +23,7 @@ const CrudApiC = () => {
             bgColor="#dc3545"
           />
         )}
-        {db && <CrudTable />}
+        {db && <CrudTableC />}
       </article>
     </>
   );

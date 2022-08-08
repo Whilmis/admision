@@ -1,25 +1,33 @@
 import React, { useState, useEffect, useContext } from "react";
 import CrudContext from "../context/CrudContext";
+import UserContext from "../context/UserContext";
 import "./CrudForm.css"
 
-const initailForm = {
-  nombreEstudiante: "",
-  apellidoEstudiante: "",
-  actaNacimiento:"",
-  direccion:"",
-  nombrePadre: "",
-  apellidoPadre: "",
-  telefono: "",
-  cedula:"",
-  confirmacion: false,
-  pago: false,
-  id: null,
-};
+
+
 
 const CrudFormC = () => {
   const { createData, updateData, dataToEdit, setDataToEdit } =
     useContext(CrudContext);
+  
+    
 
+
+    const initailForm = {
+      nombreEstudiante: "",
+      apellidoEstudiante: "",
+      actaNacimiento:"",
+      direccion:"",
+      nombrePadre: "",
+      apellidoPadre: "",
+      telefono: "",
+      cedula:"",
+      confirmacion: false,
+      pago: false,
+      idUsuario: 5,
+      id: null
+    
+    };
   const [form, setForm] = useState(initailForm);
 
   useEffect(() => {

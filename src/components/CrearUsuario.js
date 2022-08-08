@@ -21,6 +21,9 @@ const CrearUsuario = () =>
     useContext(UserContext);
 
   const [form, setForm] = useState(initailForm);
+  const [contra, setContra] = useState(initailForm)
+
+
 
   useEffect(() => {
     if (dataToEditU) {
@@ -38,13 +41,20 @@ const CrearUsuario = () =>
   };
 
 
-
+ const change = (e) => {
+  setContra(e.target.value)
+ }
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!form.nombre || !form.apellido) {
+    if (!form.nombre || !form.apellido ||  !form.gmail || !form.contrasena ) {
       alert("Datos incompletos");
+      return;
+    }
+
+    if ( form.contrasena != contra) {
+      alert("Tiene que ser la misma contraseña");
       return;
     }
 
@@ -83,7 +93,7 @@ const CrearUsuario = () =>
                 <label for="">Email</label>
             </div>
             <div class="grupo">
-                <input type="password" name="" id="password"  required /><span className="barra"></span>
+                <input type="password" name="" id="password" onChange={change} value={contra} required /><span className="barra"></span>
                 <label for="">Contraseña</label>
             </div>
 

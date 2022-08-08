@@ -17,7 +17,7 @@ const Login = () =>
 
 {
     let navigate = useNavigate();
-    const { dbU: data, setActualU } = useContext(UserContext);
+    const { dbU: data, actualisaActual,actualU } = useContext(UserContext);
     const [form, setForm] = useState(initailForm);
 
     const handleSubmit = () =>{
@@ -25,7 +25,8 @@ const Login = () =>
             if(element.gmail === form.gmail){
                 if(element.contrasena === form.contrasena){
                     
-                    setActualU(form);
+                    actualisaActual(element.id);
+                    alert(actualU);
                      element.admin? navigate("administrador"): navigate("cliente");
                    
                 }
@@ -33,7 +34,7 @@ const Login = () =>
             }
             
         });
-        alert("No Entro");
+      
     }
 
     const handleChange = (e) => {
