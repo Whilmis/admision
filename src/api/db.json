@@ -160,6 +160,23 @@
       "contrasena": "5555",
       "admin": true,
       "id": 1659894580590
+    },
+    {
+      "nombre": "dsfas",
+      "apellido": "dafasd",
+      "gmail": "paco@gmail.com",
+      "contrasena": "dafdsf",
+      "admin": false,
+      "id": 1659912204483
+    },
+    {
+      "nombre": "Whilmis",
+      "apellido": "Whilmis",
+      "gmail": "Pipi@gmail.com",
+      "contrasena": "66666",
+      "admin": false,
+      "id": 1659916323414,
+      "password": ""
     }
   ]
 }

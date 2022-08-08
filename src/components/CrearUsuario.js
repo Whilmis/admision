@@ -1,39 +1,92 @@
+import React, { useState, useEffect, useContext } from "react";
+import UserContext from "../context/UserContext";
 import "./CrearUsuario.css";
+
+const initailForm = {
+    nombre: "",
+    apellido: "",
+    gmail:"",
+    contrasena:"",
+    admin: false,
+    id: null,
+  };
+  
 
 
 const CrearUsuario = () => 
 {
 
-       // <div className="grupo">
-      /* <input type="text" name="" id="name" required/><span className="barra"></span>
-       <label for="">Nombre</label>
-   </div>*/
+    const { createDataU, updateDataU, dataToEditU, setDataToEditU } =
+    useContext(UserContext);
+
+  const [form, setForm] = useState(initailForm);
+
+  useEffect(() => {
+    if (dataToEditU) {
+      setForm(dataToEditU);
+    } else {
+      setForm(initailForm);
+    }
+  }, [dataToEditU]);
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.id]: e.target.value,
+    });
+  };
+
+
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!form.nombre || !form.apellido) {
+      alert("Datos incompletos");
+      return;
+    }
+
+    if (form.id === null) {
+      createDataU(form);
+    } else {
+      updateDataU(form);
+    }
+
+    handleReset();
+  };
+
+  const handleReset = (e) => {
+    setForm(initailForm);
+    setDataToEditU(null);
+  };
+
     return(
-        <form action=""  id="form">
+        <form onSubmit={handleSubmit}  id="form">
         <div class="form">
             <h1>COMPASS POINT</h1>
             <h4>Sistema de admision</h4>
             <h5>Crear usueario</h5>
             <div className="grupo">
-            <input type="text" name="" id="name" required/><span className="barra"></span>
+            <input type="text" name="" id="nombre"  onChange={handleChange}  value={form.nombre} required/><span className="barra"></span>
             <label for="">Nombre</label>
             </div>
 
             <div className="grupo">
-            <input type="text" name="" id="apellido" required/><span className="barra"></span>
+            <input type="text" name="" id="apellido"  onChange={handleChange}  value={form.apellido} required/><span className="barra"></span>
             <label for="">apellido</label>
             </div>
             <div class="grupo">
-                <input type="email" name="" id="email" required /><span className="barra"></span>
+                <input type="email" name="" id="gmail"  onChange={handleChange}  value={form.gmail} required /><span className="barra"></span>
                 <label for="">Email</label>
             </div>
             <div class="grupo">
-                <input type="password" name="" id="password" required /><span className="barra"></span>
+                <input type="password" name="" id="password"  required /><span className="barra"></span>
                 <label for="">Contraseña</label>
             </div>
 
             <div class="grupo">
-                <input type="password" name="" id="passwordc" required /><span className="barra"></span>
+                <input type="password" name="" id="contrasena"  onChange={handleChange}  value={form.contrasena} required /><span className="barra"></span>
                 <label for="">Confirmar Contraseña</label>
             </div>
          

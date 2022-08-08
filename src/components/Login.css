@@ -18,9 +18,18 @@
 
 body {
     font-family: 'Roboto';
-    background: #4568DC;
-
+    background-image: url("pexels-mikhail-nilov-8923079.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100%; /* You must set a specified height */
+    background-position:right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color: rgb(19, 6, 74);
+    font-family: 'Poppins', sans-serif;
+  
 }
+
+
 
 h1{
     text-align: center;
@@ -43,17 +52,19 @@ h5
 
 form{
     background: #fff;
-    padding: 200px 0;
+    padding: 70px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    height: 100vh;
+    height: 100%;
     width: 40%;
+    min-width: 300px;
+    margin: 0;
   
  
 }
 
 .form{
-    height: 100%;
+    height: 60%;
     width: 100%;
     margin: auto;
 }

@@ -1,11 +1,11 @@
-import Headers from "./Headers";
+
 import "./Inicio.css"
 
 
 const Inicio = () =>{
     return(
         <div>
-            <Headers/>
+            
           <div className="imagen"><p>La educación es nuestra primera <span> amiga </span>  </p></div>
 
         <div className="elementos">

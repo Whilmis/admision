@@ -5,6 +5,7 @@ const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
   const [dbU, setDbU] = useState(null);
+  const [actuaU, setActualU] = useState(null);
   const [dataToEditU, setDataToEditU] = useState(null);
   const [errorU, setErrorU] = useState(null);
   const [loadingU, setLoadingU] = useState(false);
@@ -102,6 +103,7 @@ const UserProvider = ({ children }) => {
     setDataToEditU,
     updateDataU,
     deleteDataU,
+    setActualU
   };
 
   return <UserContext.Provider value={data}>{children}</UserContext.Provider>;
