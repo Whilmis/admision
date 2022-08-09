@@ -25,9 +25,13 @@ const Login = () =>
             if(element.gmail === form.gmail){
                 if(element.contrasena === form.contrasena){
                     
-                    actualisaActual(element.id);
-                    alert(actualU);
-                     element.admin? navigate("administrador"): navigate("cliente");
+                    if( element.admin == "true"){
+                        navigate("administrador")
+                    }
+                    else{
+                        navigate("cliente");
+                    }
+                      
                    
                 }
 

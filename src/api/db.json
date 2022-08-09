@@ -1,7 +1,7 @@
 {
   "registros": [
     {
-      "nombreEstudiante": "Whilmis",
+      "nombreEstudiante": "111",
       "apellidoEstudiante": "Perez De Peña",
       "actaNacimiento": "40000",
       "direccion": "La victoria calle Altagracia #42",
@@ -12,20 +12,6 @@
       "confirmacion": false,
       "pago": false,
       "id": 1659964313817
-    },
-    {
-      "nombreEstudiante": "Whilmis",
-      "apellidoEstudiante": "Perez De Peña",
-      "actaNacimiento": "",
-      "direccion": "La victoria calle Altagracia #42",
-      "nombrePadre": "Whilmis",
-      "apellidoPadre": "Perez De Peña",
-      "telefono": "8095442812",
-      "cedula": "5454847",
-      "confirmacion": false,
-      "pago": false,
-      "idUsuario": null,
-      "id": 1659964730766
     },
     {
       "nombreEstudiante": "Whilmis",
@@ -82,6 +68,20 @@
       "pago": false,
       "idUsuario": 5,
       "id": 1659967447790
+    },
+    {
+      "nombreEstudiante": "Whilmis",
+      "apellidoEstudiante": "Perez De Peña",
+      "actaNacimiento": "001-054564-7",
+      "direccion": "La victoria calle Altagracia #42",
+      "nombrePadre": "Whilmis",
+      "apellidoPadre": "Perez De Peña",
+      "telefono": "8095442812",
+      "cedula": "402-5554890-8",
+      "confirmacion": false,
+      "pago": false,
+      "idUsuario": 5,
+      "id": 1659967447791
     }
   ],
   "users": [
@@ -114,17 +114,9 @@
       "apellido": "Whilmis",
       "gmail": "Pipi@gmail.com",
       "contrasena": "66666",
-      "admin": false,
+      "admin": true,
       "id": 1659916323414,
       "password": ""
-    },
-    {
-      "nombre": "Andre",
-      "apellido": "Perez",
-      "gmail": "perez@gmai.com",
-      "contrasena": "5555",
-      "admin": false,
-      "id": 1659967577988
     }
   ]
 }

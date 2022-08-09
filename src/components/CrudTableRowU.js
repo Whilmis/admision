@@ -11,7 +11,7 @@ const CrudTableRowU = ({ el }) => {
       <td>{apellido}</td>
       <td>{gmail}</td>
       <td>{contrasena}</td>  
-      <td>{admin? "Si":"No"}</td>
+      <td>{admin == "true"? "Si":"No"}</td>
  
       
    

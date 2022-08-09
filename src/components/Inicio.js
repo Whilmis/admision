@@ -1,5 +1,5 @@
 
-import "./Inicio.css"
+import "./inicio.css";
 
 
 const Inicio = () =>{

@@ -13,7 +13,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.log{
+    display: block;
+    margin: auto;
+    margin-left: 35%;
+}
 
 .creah1{
     text-align: center;

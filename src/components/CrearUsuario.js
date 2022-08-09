@@ -101,7 +101,7 @@ const CrearUsuario = () =>
                 <input type="password" name="" id="contrasena"  onChange={handleChange}  value={form.contrasena} required /><span className="barra"></span>
                 <label for="">Confirmar Contraseña</label>
             </div>
-         
+              <Link to={"/"} className="log">inicio de sesion</Link>
             <button type="submit">Crear</button>
         </div>
     </form>

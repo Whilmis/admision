@@ -29,6 +29,9 @@ const CrudProvider = ({ children }) => {
       });
   }, [url]);
 
+
+
+
   const createData = (data) => {
     data.id = Date.now();
     //console.log(data);
@@ -102,6 +105,7 @@ const CrudProvider = ({ children }) => {
     setDataToEdit,
     updateData,
     deleteData,
+  
   };
 
   return <CrudContext.Provider value={data}>{children}</CrudContext.Provider>;
