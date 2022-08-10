@@ -191,8 +191,8 @@ const CrudForm = () => {
       
 
 </div>
-        <input type="submit" value="Enviar" className="enviar"/>
-        <input type="reset" value="Limpiar" onClick={handleReset} className="limpiar" />
+        <input type="submit" value="Enviar" className="enviar" id="btn"/>
+        <input type="reset" value="Limpiar" id="btn" onClick={handleReset} className="limpiar" />
       </form>
     </div>
   );

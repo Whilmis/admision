@@ -1,0 +1,13 @@
+#divb{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid blue 2px;
+    margin: 10px;
+    padding: 20px;
+}
+
+#divb2{
+    padding: 30px;
+}

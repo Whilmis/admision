@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import CrudContext from "../context/CrudContext";
 import CrudTableRow from "./CrudTableRow";
+import Detalle from "./Detalle";
 import"./CrudTable.css"
 
 const CrudTableC = () => {
@@ -36,6 +37,7 @@ const CrudTableC = () => {
           )}
         </tbody>
       </table>
+      <Detalle/>
     </div>
   );
 };
