@@ -1,10 +1,29 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import CrudContext from "../context/CrudContext";
 import CrudTableRow from "./CrudTableRow";
 import"./CrudTable.css"
 import Busqueda from "./Busqueda";
+import axios from "axios";
+import {ExportToExcel} from './exportToExcel'
 
 const CrudTable = () => {
+  const fileName = "compass-point";
+  const [dataAPI, setData] = React.useState([])
+  
+  const getDataRequest = async () => {
+    try {
+        const resp = await axios.get('https://compasspoint.herokuapp.com/api/v1/forms');
+        console.log(resp.data);
+        setData(resp.data);
+    } catch (err) {
+        console.error(err);
+    }
+  };
+
+  useEffect(() => {
+   getDataRequest();
+
+  }, [])
   let { db: data } = useContext(CrudContext);
   let newData = data.filter((el) => el.pago )
   let newData2 = data.filter((el) => el.confirmacion )
@@ -67,7 +86,7 @@ const CrudTable = () => {
         </div>
 
          </div>
-
+         <ExportToExcel apiData={dataAPI} fileName={fileName} />
 
          { form? (
             dataf.map((el) => <Busqueda key={el.id} el={el} />)

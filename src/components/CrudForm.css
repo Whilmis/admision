@@ -11,7 +11,15 @@ form .grupo{
     display: inline-block;
 }
 
+.medio{
+    margin: auto;
+}
 
+#botones{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
 
 .direccion{
 width: 300px;
