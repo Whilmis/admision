@@ -8,7 +8,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import "./CrudForm.css"
 
 const initailForm = {
-  id:null,idUsuario:1,nombreEstudiante:"",apellidoEstudiante:"",actaNacimiento:"",direccion:"",nombrePadre:"",apellidoPadre:"",telefono:"",cedula:"",curso:"", documentoP:"", confirmacion:false, pago:false
+  id:null,idUsuario:5,nombreEstudiante:"",apellidoEstudiante:"",actaNacimiento:"",direccion:"",nombrePadre:"",apellidoPadre:"",telefono:"",cedula:"",curso:"", documentoP:"", confirmacion:false, pago:false
 };
 
 

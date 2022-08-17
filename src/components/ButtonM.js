@@ -1,6 +1,7 @@
 import Button from '@mui/material/Button';
 import { useModal } from '../hook/useModal';
 /*import './Modal.css'*/
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 
 
@@ -12,7 +13,7 @@ const ButtonM = ({el})=>{
     const[isOpenModal,openModal,closeModal] = useModal(false);
 
 
-    return(<div><Button onClick={openModal}>Detalle</Button><div><div className={`modal ${isOpenModal && "is-open"}`} onClick={closeModal}><div className='modal-container'> <h1 className='h1'>Compass Point</h1><div onClick={handelPrint}> </div> <hr></hr><div className='info'>
+    return(<div><Button onClick={openModal}>Detalle</Button><div><div className={`modal ${isOpenModal && "is-open"}`} onClick={closeModal}><div className='modal-container'> <h1 className='h1'>Compass Point</h1><div onClick={handelPrint}> <PictureAsPdfIcon color="primary"/> </div> <hr></hr><div className='info'>
           <div id="divb2"><h3>Nombre del estudiante</h3> <p>{nombreEstudiante}</p></div> 
           <div id="divb2"><h3>Nombre del estudiante</h3> <p>{apellidoEstudiante}</p></div> 
           
