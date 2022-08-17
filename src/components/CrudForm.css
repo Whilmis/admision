@@ -1,118 +1,16 @@
-#formulario{
+.check{
     display: flex;
-    justify-content:space-evenly;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-form .grupo{
-    position: relative;
-    margin: 45px ;
-    width: 210px;
-    display: inline-block;
-}
-
-.medio{
-    margin: auto;
-}
-
-#botones{
-    display: flex;
-    justify-content: center ;
+    color: rgb(53, 53, 53);
     align-items: center;
-}
-
-.direccion{
-width: 300px;
-margin-right: 10px;
-
-}
-.enviar,.limpiar{
-    background-color: #4568DC;
-    border-radius: 10px;
-    height: 40px;
-    margin: auto;
-}
-
-input:focus{ 
-    outline: none;
-    color: #5e5d5d;
-}
-
-.texto{
-   text-align: center;
-    color: #0f2b88;
-    font-family: 'Montserrat', sans-serif;
+    justify-content: space-evenly;
 }
 
 .textos{
-    color: #2196f3;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    text-align: center;
+    font-size: 14;
+    color: rgb(150, 151, 152);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
 }
-
-label{
-    color: #2196f3;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    transition: 0.5s ease all;
-    pointer-events: none;
-}
-
-input:focus~label,
-input:valid~label{
-    top: -14px;
-    font-size: 12px;
-    color: #2196f3;
-}
-
-.barra{
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-
-
-.barra::before{
-    content: "";
-    height: 2px;
-    width: 0%;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(to right, #B06AB3, #4568DC);
-    transition: 0.3s ease width;
-    left: 0;
-}
-
-input:focus~.barra::before{
-    width: 100%;
-}
-
-
-button{
-    font-family: 'roboto';
-    background: #4568DC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B06AB3, #4568DC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: none;
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    color: #fff;
-    height: 40px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-@media screen and (max-width:500px){
-    form{
-        width: 80%;
-    }
+.centro{
+    margin-left: 25px;
 }

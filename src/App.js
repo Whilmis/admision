@@ -15,6 +15,7 @@ import CrearUsuario from "./components/CrearUsuario"
 import Login from "./components/Login";
 import Administrador from "./components/Administrador";
 import Cliente from "./components/Cliente";
+import Pago from "./components/Pago";
 
 
 
@@ -78,6 +79,14 @@ function App() {
       
         
       }/>
+
+
+<Route path="pago" element={
+      
+      <Pago/>
+   
+     
+   }/>
    
     </Routes>
   </BrowserRouter>

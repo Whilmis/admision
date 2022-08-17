@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../context/UserContext";
-import "./CrudForm.css"
+/*import "./CrudForm.css"*/
 
 const initailForm = {
   nombre: "",

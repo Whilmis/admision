@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import CrudContext from "../context/CrudContext";
 import CrudTableRow from "./CrudTableRow";
-import"./CrudTable.css"
+/*import"./CrudTable.css"*/
 import Busqueda from "./Busqueda";
 import axios from "axios";
 import {ExportToExcel} from './exportToExcel'

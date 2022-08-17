@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../context/UserContext";
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 import "./CrudForm.css"
 
 const initailForm = {
@@ -66,76 +70,68 @@ const CrudFormU = () => {
     <div>
       <h3 className="texto">{dataToEditU ? "Editar" : "Agregar"}</h3>
       <form onSubmit={handleSubmit}>
-
-      <div className="grupo">
-      <input
-          type="text"
-          name="nombre"
-          placeholder=""
-          onChange={handleChange}
-          value={form.nombre}
-        /><label for="name" class="form_label">Nombre</label>
-        <span class="form__line"></span>
-            </div>
-  
-       
-
-            <div className="grupo">
-            <input
-          type="text"
-          name="apellido"
-          placeholder=""
-          onChange={handleChange}
-          value={form.apellido}
-        />  <span className="barra"></span><label for="name" class="form_label">Apellido </label>
-        <span class="form__line"></span>
-            </div>
-     
-          
-            
-          <div className="grupo">
-          <input
-          type="email"
-          name="gmail"
-          placeholder=""
-          onChange={handleChange}
-          value={form.gmail}
-        />  <span className="barra"></span><label for="name" class="form_label">Gmail</label>
-        <span class="form__line"></span>
-            </div>
-     
-
-           <div className="grupo direccion">
-           <input
-          type="password"
-          name="contrasena"
-          placeholder=""
-          onChange={handleChange}
-          value={form.contrasena}
-        />  <span className="barra"></span><label for="name" class="form_label">Contraseña</label>
-        <span class="form__line"></span>
-            </div>
-       
-
-       
-      
-       <div>
+      <Box
+      sx={{
+        '& .MuiTextField-root': { m: 3, width: '30ch',alignContent: "center" },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+            <TextField
+        id="filled-multiline-flexible"
+        label="Nombre"
+        value={form.nombre}
+        name="nombre"
+        onChange={handleChange}
         
-       <h4 for="confirmacion" class="textos">Admin</h4>
-        <input
-          type="checkbox"
-          name="admin"
-          id="admin"
-          onChange={handleChecked}
-          checked={form.admin}
-        />
-          </div>
-      <div>
-      
+      />
+            <TextField
+        id="outlined-name"
+        label="Apellido"
+        value={form.apellido}
+        name="apellido"
+        onChange={handleChange}
+        
+      />
+            <TextField
+        id="outlined-name"
+        label="Gmail"
+        type="email"
+        value={form.gmail}
+        name="gmail"
+        onChange={handleChange}
+        
+      />    
+            <TextField
+        id="outlined-name"
+        label="Contraseña"
+        value={form.direccion}
+        type="password"
+        name="contrasena"
+        onChange={handleChange}
 
+      />
+  
+<div className="check">
+<div>
+        
+        <h4 for="confirmacion" class="textos">Admin</h4>
+         <input
+           type="checkbox"
+           name="admin"
+           id="admin"
+           onChange={handleChecked}
+           checked={form.admin}
+         />
+         </div>
+      
+        <ButtonGroup variant="contained" aria-label="outlined primary button group">
+      <Button type="submit">Enviar</Button>
+      <Button onClick={handleReset}>Reset</Button>
+    </ButtonGroup>
 </div>
-        <input type="submit" value="Enviar" className="enviar"/>
-        <input type="reset" value="Limpiar" onClick={handleReset} className="limpiar" />
+      </Box>
+    
       </form>
     </div>
   );

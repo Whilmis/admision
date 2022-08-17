@@ -11,7 +11,8 @@ const UserProvider = ({ children }) => {
   const [loadingU, setLoadingU] = useState(false);
 
   let api = helpHttp();
-  let url = "https://compasspoint.herokuapp.com/api/v1/users";
+  /*let url = "https://compasspoint.herokuapp.com/api/v1/users";*/
+  let url = "http://localhost:5000/users";
 
   useEffect(() => {
     setLoadingU(true);

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import CrudContext from "../context/CrudContext";
-import "./Busqueda.css"
+/*import "./Busqueda.css"*/
 
 const Busqueda = ({ el }) => {
   const { setDataToEdit, deleteData } = useContext(CrudContext);
