@@ -8,7 +8,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import "./CrudForm.css"
 
 const initailForm = {
-  id:null,idUsuario:5,nombreEstudiante:"",apellidoEstudiante:"",actaNacimiento:"",direccion:"",nombrePadre:"",apellidoPadre:"",telefono:"",cedula:"",confirmacion:false,pago:false,
+  id:null,idUsuario:1,nombreEstudiante:"",apellidoEstudiante:"",actaNacimiento:"",direccion:"",nombrePadre:"",apellidoPadre:"",telefono:"",cedula:"",curso:"", documentoP:"", confirmacion:false, pago:false
 };
 
 
@@ -33,6 +33,12 @@ const CrudFormC = () => {
     });
   };
 
+  const handleChecked = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.checked,
+    });
+  };
 
 
   const handleSubmit = (e) => {
@@ -161,10 +167,24 @@ const CrudFormC = () => {
         onChange={handleChange}
         
       />
-      
+      <TextField
+        id="outlined-name"
+        label="Documento Personal"
+        value={form.documentoP}
+        name="documentoP"
+        onChange={handleChange}
+        
+      />
+       <select name="curso" value={form.curso}  onChange={handleChange}>
+        <option value=''>-------</option>
+        <option value='Maternal'>Maternal</option>
+        <option value='Kinder'>Kínder</option>
+        <option value='Pre-Primaria'>Pre-Primaria</option>
+       
+       </select>
 
 <div className="check">
-      
+     
         <ButtonGroup variant="contained" aria-label="outlined primary button group">
       <Button type="submit">Enviar</Button>
       <Button onClick={handleReset}>Reset</Button>

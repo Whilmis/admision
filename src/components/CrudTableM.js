@@ -138,7 +138,7 @@ export default function CrudtableM() {
      
       </form>
       <div className='belemento'>
-        <Resumen/>
+       <Resumen></Resumen>
         
         <ExportToExcel apiData={dataAPI} fileName={fileName} />
         </div>

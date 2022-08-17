@@ -8,7 +8,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import "./CrudForm.css"
 
 const initailForm = {
-  id:null,idUsuario:1,nombreEstudiante:"",apellidoEstudiante:"",actaNacimiento:"",direccion:"",nombrePadre:"",apellidoPadre:"",telefono:"",cedula:"", confirmacion:false, pago:false
+  id:null,idUsuario:5,nombreEstudiante:"",apellidoEstudiante:"",actaNacimiento:"",direccion:"",nombrePadre:"",apellidoPadre:"",telefono:"",cedula:"",curso:"", documentoP:"", confirmacion:false, pago:false
 };
 
 
@@ -167,11 +167,25 @@ const CrudForm = () => {
         onChange={handleChange}
         
       />
-      
+      <TextField
+        id="outlined-name"
+        label="Documento Personal"
+        value={form.documentoP}
+        name="documentoP"
+        onChange={handleChange}
+        
+      />
+       <select name="curso" value={form.curso}  onChange={handleChange}>
+        <option value=''>-------</option>
+        <option value='Maternal'>Maternal</option>
+        <option value='Kínder'>Kínder</option>
+        <option value='Pre-Primaria'>Pre-Primaria</option>
+       
+       </select>
 
 <div className="check">
         <div>
-        <h4 for="confirmacion" class="textos">Confirmar</h4>
+        <label for="confirmacion" class="textos">Confirmar</label>
          <input
            type="checkbox"
            name="confirmacion"

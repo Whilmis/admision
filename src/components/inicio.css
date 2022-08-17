@@ -22,7 +22,7 @@
 .elementos{
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-start;
+    align-items: center;
     flex-wrap: wrap;
     color: rgb(14, 14, 91);
 }

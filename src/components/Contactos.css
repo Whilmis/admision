@@ -1,10 +1,10 @@
-.contenedor{
+.contaccon{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-top: 150px;
 }
-.elemento{
+.elemento1{
     width: 20%;
     padding: 30px;
 }
