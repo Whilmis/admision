@@ -51,9 +51,11 @@ function App() {
       }/>
 
 <Route path="administrar" element={
+              <UserProvider>
          <CrudProvider>
          <CrudApi/>
          </CrudProvider>
+         </UserProvider>
         
       }/>
 

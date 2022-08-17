@@ -45,7 +45,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 
-export default function CrudtableM() {
+export default function CrudtableF() {
     const fileName = "compass-point";
     const [dataAPI, setData] = React.useState([])
     
@@ -63,7 +63,7 @@ export default function CrudtableM() {
      getDataRequest();
   
     }, [])
-    let { db: data,setDataToEdit, deleteData } = useContext(CrudContext);
+    let { db: data ,setDataToEdit, deleteData } = useContext(CrudContext);
     let newData = data.filter((el) => el.pago )
     let newData2 = data.filter((el) => el.confirmacion )
     const [form, setForm] = useState(false);
@@ -155,27 +155,7 @@ export default function CrudtableM() {
           </TableRow>
         </TableHead>
         <TableBody>
-        { form? (
-            dataf.map((el) =>(
-              <StyledTableRow key={el.id}>
-                <StyledTableCell component="th" scope="row">
-                  {el.nombreEstudiante+ " "+ el.apellidoEstudiante}
-                </StyledTableCell>
-                <StyledTableCell align="right">{el.nombrePadre+ " "+ el.apellidoPadre}</StyledTableCell>
-                <StyledTableCell align="right">{el.pago? "Realizado":"No realizado"}</StyledTableCell>
-                <StyledTableCell align="right">{el.confirmacion? "Confirmado":"No Confirmado"}</StyledTableCell>
-                <StyledTableCell align="right">{
-                    <ButtonGroup variant="outlined" aria-label="outlined button group">
-                    <Button onClick={() => deleteData(el.id)}>Eliminar</Button>
-                    <Button onClick={() => setDataToEdit(el)}>Editar</Button>
-                    <ButtonM el={el}/>
-                 
-                  </ButtonGroup>
-                }</StyledTableCell>
-              </StyledTableRow>
-            ))
-          ) : 
-          data.map((el) => (
+        {        data.map((el) => (
             <StyledTableRow key={el.id}>
               <StyledTableCell component="th" scope="row">
                 {el.nombreEstudiante+ " "+ el.apellidoEstudiante}
@@ -187,7 +167,7 @@ export default function CrudtableM() {
                   <ButtonGroup variant="outlined" aria-label="outlined button group">
                   <Button onClick={() => deleteData(el.id)}>Eliminar</Button>
                   <Button onClick={() => setDataToEdit(el)}>Editar</Button>
-                  <ButtonM el={el}/>
+                   <ButtonM el={el}/>
                 </ButtonGroup>
               }</StyledTableCell>
             </StyledTableRow>

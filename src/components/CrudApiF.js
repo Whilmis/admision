@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import UserContext from "../context/UserContext"
-import CrudForm from "./CrudForm";
+import CrudFormU from "./CrudFormU";
 import Loader from "./Loader";
 import Message from "./Message";
 import Headers from "./Headers";
-import CrudTableF from "./CrudTableF";
+import CrudTableU from "./CrudTableU";
 
 
-const CrudApi = () => {
+const CrudApiF = () => {
   const { dbU, loadingU, errorU } = useContext(UserContext);
 
   return (
@@ -15,7 +15,7 @@ const CrudApi = () => {
     <Headers/>
       
       <article className="grid-1-2">
-        <CrudForm />
+        <CrudFormU />
         {loadingU && <Loader />}
         {errorU && (
           <Message
@@ -23,10 +23,10 @@ const CrudApi = () => {
             bgColor="#dc3545"
           />
         )}
-        {dbU && <CrudTableF />}
+        {dbU && <CrudTableU />}
       </article>
     </>
   );
 };
 
-export default CrudApi;
+export default CrudApiF;

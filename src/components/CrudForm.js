@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useContext } from "react";
 import UserContext from "../context/CrudContext";
 import TextField from '@mui/material/TextField';
@@ -8,7 +7,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import "./CrudForm.css"
 
 const initailForm = {
-  id:null,idUsuario:5,nombreEstudiante:"",apellidoEstudiante:"",actaNacimiento:"",direccion:"",nombrePadre:"",apellidoPadre:"",telefono:"",cedula:"",curso:"", documentoP:"", confirmacion:false, pago:false
+  id:null,idUsuario:1,nombreEstudiante:"",apellidoEstudiante:"",actaNacimiento:"",direccion:"",nombrePadre:"",apellidoPadre:"",telefono:"",cedula:"",curso:"", documentoP:"", confirmacion:false, pago:false
 };
 
 
@@ -178,10 +177,11 @@ const CrudForm = () => {
        <select name="curso" value={form.curso}  onChange={handleChange}>
         <option value=''>-------</option>
         <option value='Maternal'>Maternal</option>
-        <option value='Kínder'>Kínder</option>
+        <option value='Kinder'>Kínder</option>
         <option value='Pre-Primaria'>Pre-Primaria</option>
        
        </select>
+
 
 <div className="check">
         <div>

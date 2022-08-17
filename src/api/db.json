@@ -47,6 +47,42 @@
       "documentoP": "402-225479-6",
       "confirmacion": false,
       "pago": false
+    },
+    {
+      "id": 1660743928836,
+      "idUsuario": 5,
+      "nombreEstudiante": "Whilmis",
+      "apellidoEstudiante": "8095442812",
+      "actaNacimiento": {
+        "name": "file",
+        "file": null
+      },
+      "direccion": "La victoria calle Altagracia #42",
+      "nombrePadre": "Whilmis",
+      "apellidoPadre": "Perez De Peña",
+      "telefono": "8095442812",
+      "cedula": "402-5554890-8",
+      "curso": "",
+      "documentoP": "402-225479-6",
+      "confirmacion": false,
+      "pago": false,
+      "undefined": {}
+    },
+    {
+      "id": 1660753497803,
+      "idUsuario": 1,
+      "nombreEstudiante": "Whilmis",
+      "apellidoEstudiante": "8095442812",
+      "actaNacimiento": "001-054564-7",
+      "direccion": "La victoria calle Altagracia #42",
+      "nombrePadre": "Whilmis",
+      "apellidoPadre": "Perez De Peña",
+      "telefono": "8095442812",
+      "cedula": "402-5554890-8",
+      "curso": "Maternal",
+      "documentoP": "402-225479-6",
+      "confirmacion": false,
+      "pago": false
     }
   ],
   "users": [
